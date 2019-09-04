@@ -1,0 +1,479 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<HTML LANG="en">
+<HEAD><TITLE>COMP26120: Algorithms and Imperative Programming </TITLE>
+</HEAD>
+<BODY>  
+
+<p>
+</p>
+
+<H2>COMP26120: Algorithms and Imperative Programming (2018/19)</H2>   
+
+<p>
+</p>
+<hr>
+<p>
+Acknowledgements: Parts of this course were developed by Joshua Knowles, Peter Jinks, Jon Shapiro, David Rydeheard, and Ian Pratt-Hartmann.
+
+</p>
+<hr>
+
+<p></p>
+
+This year the course is being delivered by <a href="http://www.cs.man.ac.uk/~regerg/">Giles Reger</a>, <a href="http://www.cs.man.ac.uk/~milan/">Milan Mihajlovic</a> and <a href="https://ssvlab.github.io/lucasccordeiro/">Lucas Cordeiro</a>.
+
+<H2><font color="blue">Aims<font color="black"></H2>
+
+The course aims to: 
+<ul>
+<li> Help you become confident with a range of data structures and algorithms and able to apply them in a realistic way</li>
+<li> Give you the tools required to analyse a problem and decide which algorithms or algorithmic techniques to apply (we refer to this as <i>algorithmic literacy</i>)</li>
+<li> Emphasise practical concerns rahter than mathematical analysis</li>
+<li> Introduce you to C by applying it to solve new problems</li> 
+</ul>
+
+<p>
+The course is arranged differently from some other courses. To reflect its practical nature there is one laboratory session (2 hours) per week and one lecture (1 hour) per week. 
+</p>
+<p>
+<font color="red">Warning<font color="black">: Lectures <i>do not provide all the information</i> you will need for
+the course, or to complete the laboratory exercises. You are expected
+to read additional material - this is part of developing algorithmic
+literacy. Lectures will cover the main algorithmic techniques and concepts but you will be required to explore these further. 
+<p>
+
+<H2><font color="blue">Resources<font color="black"></H2>
+
+<UL> 
+
+<LI><A HREF="http://studentnet.cs.manchester.ac.uk/syllabus/?code=COMP26120&year=2018">Syllabus</A>
+
+<P>
+
+<LI>All lecture notes, laboratory exercises, examination and revision guidance, remedial mathematics material, notes etc. are
+available in the <A HREF=#ACTIVITIES>Activities</A> and
+<A HREF=#ASSESSMENT>Assessment</A> sections below.
+
+<P>
+
+<LI>Resources for the programming language C (we provide a quick introduction in the course): 
+
+<UL>
+<LI> <A HREF=http://wiki.cs.manchester.ac.uk/index.php/Resources-for-learning-C>See this list on the Wiki</A> </LI>
+<LI> If you have any further recommendations then please let us know or edit the Wiki</LI>
+
+</UL>
+
+<P>
+
+<LI>Algorithms:
+
+<UL>
+
+<LI>Core text: <font color="red">
+<BR><i>Algorithm design: foundations, examples and internet examples</i>
+<BR>by Goodrich, Michael T. and Roberto Tamassia
+<BR>ISBN 0471383951, Wiley 2002. <font color="black">
+<BR>
+<BR> Available as <a href="https://ebookcentral.proquest.com/lib/manchester/detail.action?docID=5182215">online book</a>. To access this you need to be on the university network, or to set up a VPN (Virtual Private Network) to gain university access.
+<BR>
+<BR>Also available in the University library, Joule library, School library and Blackwells bookshop.
+<BR>
+<BR>
+<LI>Second Core (but less referenced) text: <font color="red">
+<BR><i>Introduction to Algorithms</i>
+<BR>by Cormen, Leiserson, Rivest and Stein
+<BR>ISBN 978-0-262-03384-8, MIT Press 2009 <font color="black">
+<BR>
+<BR>Available at the University library etc
+<BR>
+<BR>
+<LI> Main C text:<font color="red">
+<BR><i>C How to Program</i>
+<BR>by Harvey M. Deital and Paul J. Deital
+<BR>ISBN 978-9332555310, Pearson 2015<font color="black">
+<BR>
+<BR>
+<LI>List of Supplementary texts in the <A HREF="http://studentnet.cs.manchester.ac.uk/syllabus/?code=COMP26120&year=2018">syllabus</A>  
+<BR>
+<BR>
+<LI>We will provide lots of extra material in the labs for you to learn more about the topics being covered. Some of the links below may be obtainable only on the university network or via a VPN. If you ever find any additional material that you think would be useful to other students then do let us know and we will include it</LI>
+<!--
+<BR>
+<BR>
+<LI>Material on <font color="red">Knapsack Problems<font color="black">: For laboratory exercises.
+<UL>
+<LI><A HREF=kp.py>Knapsack learning tool</A> (Peter Sutton May 2010) </LI>
+<LI><a
+href="http://www.es.ele.tue.nl/education/5MC10/Solutions/knapsack.pdf">Slides
+on dynamic programming for the 0/1 knapsack problem</a> </LI>
+<LI><a href="http://www.mathcs.emory.edu/~cheung/Courses/323/Syllabus/BranchBound/Docs/branch+bound01.pdf ">Branch-and-bound Java code (0/1)</a> </LI>
+</UL>
+<BR>
+<LI>Material on <font color="red">Dijkstra's Shortest Path Algorithm<font color="black">: For laboratory exercises.
+<UL>
+<LI>There is a nice <a href="DijkstraLearningTool/DijkstraLearningTool/index.html">Dijkstra's Algorithm learning tool</a>, prepared by Pedro Jorge as his third-year project in 2015/16.<br> There is also <a href="DijkstraLearningTool/PedroJorge.mp4">a video</a> to explain the algorithm and how to use this tool.</LI>
+</UL>
+<BR>
+-->
+
+<!--
+<LI>Material on <font color="red">String Matching Algorithms<font color="black">: For your interest.
+   <UL>
+   <LI> A superb <a href="http://www-igm.univ-mlv.fr/~lecroq/string/index.html">survey of exact string matching algorithms</a>, which 
+     is also available as a book: <I>Handbook of Exact String Matching Algorithms</I> by Christian Charras and Thierry Lecroq (2004),</LI>
+   <LI> Other good books include:  
+     <UL>
+       <LI><I>Flexible Pattern Matching in Strings: Practical On-Line Search Algorithms for Texts and Biological Sequences</I> 
+       by Gonzalo Navarro and Mathieu Raffinot (2007)</LI>
+       <LI><I>Computer Algorithms: String Pattern Matching Strategies</I> by Jun-ichi Aoe  (1994)</LI>
+       <LI><I>Pattern Recognition and String Matching</I> by Dechang Chen and Xiuzhen (2012)</LI>
+      </UL></LI> 
+   <LI> A <a href="http://xlinux.nist.gov/dads/">general collection</a> of algorithms and algorithmic problems, including string matching algorithms,</LI>
+   <LI> The <a href="http://dl.acm.org/citation.cfm?id=362934&CFID=358705246&CFTOKEN=76998047">Harrison hashing</a> inexact string matching algorithm.</LI>
+   </UL>
+</UL>
+-->
+
+<!-- <LI> <P> Tutorial sheets are here: -->
+<!-- <A HREF=tutorials/tutorial1.pdf>Tutorial 1</A> (not used in 2013/14) -->
+<!-- <A HREF=tutorials/string-matching-tut.pdf>Tutorial 1</A>,  <A HREF=tutorials/knapsack.pdf>Tutorial 2</A>. Both involve preparing a presentation using the resources above. </P>
+-->
+</UL>
+
+
+<HR>
+
+<H2><A NAME=ACTIVITIES><font color="blue">General Arrangements<font color="black"></A></H2>
+
+<p>
+Normally, there will be ONE laboratory session and ONE lecture per week. The schedule is given in detail below.
+</p>
+<h4>Laboratory sessions</h4>
+
+<p>Labs are there for you to have your work marked and to ask questions to better understand the material. This year we are introducing a new marking system that will be used as follows:
+<ul>
+<li> To submit an exercise you will need to run <tt>submit</tt> from the command line as normal
+<li> Once this has been submitted our system will pick it up, compile it, and run some automated tests on your code to produce a report
+<li> You can log in to <a href="https://marking.cs.manchester.ac.uk/">the system</a> to view the reports of your submitted code (you can also use this to check that the submission worked)
+<li> In your marking session, when you want to be marked you should select <i>request marking</i> next to the exercise in the online system and enter your information
+<li> TAs will be notified that you are ready to be marked and use their version of your report (which may contain extra bits) to mark your work
+<li> Once the TAs submit your mark you should receive an email confirming it (if you do not please contact the course unit leader but wait a few hours first)
+<li> Note that the electronic marking queue aims to distribute TAs uniformly between students and gives priority to those being marked for the correct exercise in the correct marking session (if you go to the wrong marking session you will be at the end of the queue)
+</ul>
+
+<p>
+Attendance in labs:
+</p>
+<ul>
+<li>We will collect attendance in labs and this will appear in ARCADE
+<li>Attendance is not mandatory (there are no marks attached to it) but is strongly encouraged and missing a lab may lead to you not getting marked (see marking deadline below). 
+<li>If you wish to ammend your ARCADE entry then you should talk to the lab manager in your lab session. If you miss a session for a legitimate reason (because of, for example, medical appointments, interviews, etc, or illness) and need to marked in a later session then talk to the lab manager and they will be able to remove you from the bottom of the marking queue</li>
+<li> Only in exceptional circumstances contact a member of staff for these issues - ordinary messages will be ignored. 
+</li>
+</ul>
+
+<h4>Deadlines</h4>
+
+<p>
+Each laboratory exercise has a standard deadline of <i>the beginning of the next lab session</i>. For example, if your lab sessions are 11:00-13:00 on Tuesdays then the deadline for the Week 2 lab is 11:00 on the Tuesday of Week 3. In certain cases the next lab session may not be the next week (e.g. for reading week). At the end of the Semester the next lab session is the first one of the next Semester. As per general School policy, there are no extensions and late flags should be removed via the standard mitigating circumstances procedure.
+</p>
+<p>
+If you decide to complete
+the exercise after the labs shut in the evening, it is your responsibility
+to make sure that you can submit remotely.
+</p>
+<p>
+As well as the standard submission deadline, there is a marking deadline: <font color="red">All exercises should be marked within 3 LABS of the submission deadline<font color="black">. Submissions not marked by this deadline will only be marked at the discretion of the lab manager. For example, if you submit something in week 2 you can have it marked in weeks 2, 3, or 4. The marking deadline may be relaxed if there is too much demand in labs. The best way to avoid this is to have your work marked in the week in which you submitted it. If you turn up to the lab and join the marking queue and still do not get marked then your individual marking deadline will automatically extend until the end of your next lab.
+</p>
+
+<H2><font color="blue">Course schedule, lecture material and laboratory exercises<font color="black"></H2>
+
+<!--
+<p>
+<h4>Tutorials</h4> 
+<p>There are tutorial sessions associated with this course. Here are the tutorial sheets:
+<ul>
+<li>  <A HREF=tutorials/string-matching-tut.pdf>Tutorial sheet 1</A> You need to prepare a presentation, using the resources on String Matching above. </li>
+<li> <A HREF=tutorials/knapsack.pdf>Tutorial sheet 2</A> This tutorial is preparation for the lab exercise on Knapsack Problems. You should therefore prepare the tutorial well ahead of Sem 2: Weeks 5/6. </li>
+</ul> 
+</p>
+-->
+
+<p>
+Lectures start in Week 1, Laboratory exercises in Week 2.
+</p>
+
+<p>
+<a href="UseOfOthersCode.html">Policy on use of code from outside sources</a>
+(downloaded from the internet, etc). <font color="red">Warning<font color="black">: Plagarism and collusion detectors may be run on your answers and disciplinary action taken. </li>
+</p>
+<p>
+For suggested reading we use GT for <i>Algorithm Design</i> (core text), CLRS for <i>Introduction to Algorithms</i>, and DD for <i>C How to Program</i>. Note that for non-core-text material (CLRS and DD) this is <i>suggested</i> in the sense that it will help but is not core. </p>
+<p>All quizes are on Blackboard and will have a deadline on midnight on the Sunday at the end of the week. However, note that if there is a problem with Blackboard after 4pm on Friday you will not be able to get any help with this.</p>
+
+<TABLE BORDER=1 cellpadding="7" style="width: 100%">
+  <colgroup>
+       <col span="1" style="width: 5%;">
+       <col span="1" style="width: 35%;">
+       <col span="1" style="width: 15%;">
+       <col span="1" style="width: 35%;">
+       <col span="1" style="width: 10%;">
+    </colgroup>
+
+<TR><TH COLSPAN=5>First Semester<TR><TH>week<TH>Lectures<TH>Suggested Reading<TH>Labs<TH>Quiz</TH>   
+<TR><TH COLSPAN=2>Welcome/Registration Week
+	<TD><TD ROWSPAN=2> 
+   No laboratory session in Week 0 or Week 1.
+<TR><TH>1<TD>Giles: <a href="2018slides/introduction.pdf">Introduction - Algorithms and their Performance</a><TD>GT 1.1
+<TR><TH>2<TD>Giles: <a href="2018slides/lecture2.pdf">From Java to C</a>
+
+	<TD><TD><a href="2018labs/lab1-Pseudocode.pdf">Lab 1 - Algorithm Design and  Performance</a> - some <a href="2018labs/lab1-reading.pdf">hints and tips</a>. 
+<TR><TH>3<TD>Lucas: <a href="2018slides/pre-lecture3.pdf">Pointers in C</a>
+	<TD>GT 2.1, DD 7
+	<TD><a href="2018labs/lab2-C-one.pdf">Lab 2 - Introduction to C</a> - some <a href="2018labs/lab2-reading.pdf">necessary reading</a>.
+<TR><TH>4<TD>Lucas: <a href="2018slides/lecture4.pdf">Linked Lists in C</a>
+	<TD>GT 2.2, CLRS 10, DD 12
+	<TD><a href="2018labs/lab3-C-two.pdf">Lab 3 - Debugging; Arrays and Strings in C</a> - some reading on <a href="2018labs/debugging.pdf">debugging</a> and <a href="2018labs/pointers.pdf">pointers</a>. 
+<TR><TH>5<TD>Lucas: <a href="2018slides/lecture5.pdf">Introducing Complexity Analysis</a>
+	<TD>GT 1.2-1.3, CLRS 2,3
+	<TD><a href="2018labs/lab4-LinkedList.pdf">Lab 4 - Linked Lists</a>
+
+<TR><TH COLSPAN=2>Reading Week <TD> GT 8.1-8.2, CLRS 4
+
+<TR><TH>7<TD>Lucas: <a href="2018slides/lecture6.pdf">Divide and Conquer</a> 
+	<TD>GT 9.1
+	<TD><a href="2018labs/lab5-Iterative-Sort.pdf">Lab 5  - Iterative Sort</a>, <a href="SortingTool/index.html">further information about sorting algorithms</a> 
+	<TD>C Programming
+<TR>
+<TR><TH>8<TD>Lucas: <a href="2018slides/lecture7.pdf">More on the Complexity of Recursive Programs</a>
+	<TD>GT 2.3
+	<TD><a href="2018labs/lab6-Recursive-Sort.pdf">Lab 6 - Recursive Sort</a> 
+<TR><TH>9<TD ROWSPAN=3>Milan: Advanced Data Structures (binary trees, AVL trees, Hash tables). <a href="2018slides/lecture8.pdf">first lecture</a>, <a href="2018slides/lecture9.pdf">second lecture</a>, and <a href="2018slides/lecture10.pdf">third lecture</a>. 
+	<TD> GT 4.2
+	<TD ROWSPAN=2><a href="2018labs/lab7-Pangolins.pdf">Lab 7 - Pangolins</a>, <a href="2018labs/pangolins.pdf">a bigger example of the game</a> 
+	<TD>Complexity
+<TR><TH>10 <TD> GT 5.3, 19.6
+<TR><TH>11
+	<TD> GT 6.1-6.3
+	<TD ROWSPAN=2><a href="2018labs/lab8-spellchecker.pdf">Lab 8 - Spellchecker</a> (Deadline start of Semester 2) 
+	<TD>Data Structures
+<TR><TH>12<TD> Revision - <a href="2018slides/revision_sem1_1.pdf">overview</a> and <a href="2018slides/revision_sem1_2.pdf">Lucas part</a>
+                 
+
+<TR><TH COLSPAN=5>Second Semester <br>
+Easter break is 8th April - 29 April (between Weeks 10 and 11). <br>Monday 6th May (Week 6) is a Bank Holiday so the revision lecture will be rescheduled.
+<HR>
+<TR><TH>week<TH>Lecture
+<TH>Suggested Reading
+<TH>Lab
+<TH>Quiz
+
+<TR><TH>1<TD ROWSPAN=3>Milan: Graph Algorithms. <a href="2018slides/COMP26120-G-L1-18.pdf">Lecture 1</a>, <a href="2018slides/COMP26120-G-L2-18.pdf">Lecture 2</a>, <a href="2018slides/COMP26120-G-L3-18.pdf">Lecture 3</a>
+ <TD ROWSPAN=3> GT 13, 14 <TD> The labs this week (Week 1) are marking sessions only
+<TR><TH>2<TD><a href="2018labs/lab9-Graphs.pdf">Lab 9 - Representing Graphs</a> (and some <a href="2018labs/lab9-extension.pdf">extension material</a>)
+<TR><TH>3<TD ROWSPAN=3><a href="2018labs/lab10-Testing-small-world-hypothesis.pdf">Lab 10 - Testing the Small World Hypothesis</a>
+<TR><TH>4<TD ROWSPAN=2>Lucas: Tractability and NP completeness. <a href="2018slides/Tractability-NPC_part1.pdf">Lecture 4</a> <a href="2018slides/Tractability-NPC_part2.pdf">Lecture 5</a><TD ROWSPAN=2>GT 17, CLRS 34<TD> Graphs
+<TR><TH>5
+<TR><TH>6<TD ROWSPAN=4>Giles: Further Algorithmic Techniques
+<ul>
+<li><a href="2018slides/techniques1.pdf">Part 1. Writing algorithms and Greedy Algorithms</a>
+<li><a href="2018slides/techniques2.pdf">Part 2. Dynamic Programming</a>
+<li>Part 3. Linear Programming: <a href="2018slides/techniques3.pdf">One</a> and <a href="2018slides/techniques3b.pdf">Two</a>
+<!--<li>Part 4. Approximation-->
+<ul>
+<TD ROWSPAN=4>GT 5 and CLRS 15,16 for Greedy and Dynamic. CLRS 29 for Linear Programming. 
+<TD> <a href="2018labs/lab11-graph-colouring.pdf ">Lab 11 - From Graph Colouring to Satisfiability Checking</a>
+<TR><TH>7
+<TD ROWSPAN=3> <a href="2018labs/lab12-Knapsack.pdf">Lab 12 - The Knapsack Problem</a>
+        <!--<font color="red"> Warning<font color =
+        "black">: To undertake this exercise you will need to read this
+        material on the <A href="lab/knapsack.pdf"> Knapsack problems</a>. (See also the material in the Resources
+        section above).   <BR> <BR>-->
+<TR><TH>8<TD>Tractability and Techniques 1 
+<TR><TH>9
+<TR><TH>10<TD ROWSPAN=2>Giles: Number Theoretic Algorithms. <a href="2018slides/numtheory1.pdf">Lecture 1</a> <a href="2018slides/numtheory2.pdf">Lecture 2</a><TD ROWSPAN=2> GT 10.1-3. CLRS 31 <TD ROWSPAN=2> <a href="2018labs/lab13-public-key-cryptography.pdf">Lab 13 - Public Key Cryptography</a> <i>There are no provided files for this lab, you should create your own makefile etc</i> 
+<TR><TH>11<TD>Techniques 2 and Number Theoretic
+<TR><TH>12<TD>Revision Lecture - <a href="2018slides/revision_sem2.pdf">Giles' Slides</a> <a href="2018slides/revision_sem2_cordeiro.pdf">Lucas' Slides</a> <TD><TD>The labs this week (Week 12) are marking sessions only
+   <BR><B>This is normally your last chance to get lab work marked</B>
+  
+</TABLE>
+
+<HR>
+
+
+
+<H2><A NAME=ASSESSMENT><font color="blue">Assessment<font color="black"></A></H2>
+
+<p>
+C programming is assessed only via the laboratory exercises.
+</p>
+<p>
+The full (two semester) course is assessed as follows:
+</p>
+<UL>
+<LI>50% Coursework 
+<UL>
+<LI>Each Semester is worth 25%
+<UL>
+<LI>Lab exercises = 20%
+<LI>Blackboard Quizes = 5% (3 each semester) 
+</UL>
+<LI>The quizes test content covered in lectures <b>and</b> labs
+</UL>
+
+
+<P>
+
+<LI>50% Exam
+<UL>
+<LI>January = 15%. More details below. <BR>Format: 1.5 hours. 2 questions, answer both. 
+
+
+<LI>May/June = 35% On all the material of both semesters - except C programming. Details below.<BR>
+Format: 2 hours, 3 questions. Answer all questions.
+
+</UL>
+
+</UL>
+
+<H3>Guidance for the January Examination</H3>
+
+<p>Format: 1.5 hour exam: 2 questions, answer both.</p>
+
+<p>The material covered in this exam is that of Semester 1, except that the C
+programming language is not examined (it is assessed in the laboratory
+exercises instead). Thus the exam (broadly) covers the Divide and Conquer paradigm, Algorithmic Complexity, Sorting Algorithms, and (Advanced) Data Structures. Remember that topics from lectures <b>and</b> labs are examinable and some of these topics required further reading in the course textbook. 
+</p>
+
+<p>The syllabus is defined by the distributed material, which may
+contain references to specific  sections of the
+coursebook that it is necessary to read. It is expected that you do this reading. Bear in mind that lectures are for getting a
+general understanding of a particular topic; textbooks are for details. 
+In a very few cases, the indicated sections of the
+textbook contain explanations of specific topics not addressed 
+in the lectures. In such cases, it is
+reasonable to suppose that detailed questions about this material will
+not appear on the examination. On the other hand, understanding general techniques and method of
+approach is likely to be useful in answering examination questions.
+<p>
+As always, the advice on scheduling revision is to start by getting a good general
+appreciation of the topics, and then progressively to deepen one's
+understanding. Never bet on a particular topic occurring: only a part
+of what we covered can be examined.
+
+
+<H3>Guidance for the May/June Examination</H3>
+
+<P>
+The examination is 2 hours in duration, with 3 sections. You are asked to answer all uestions. The sections are weighted as follows:
+<ul>
+<li>Section A: Graphs and Graph Algorithms [20 marks]
+<li>Section B: Complexity and NP completeness [10 marks]
+<li>Section C: Algorithmic Techniques and Number Theoretic Algorithms [30 marks]
+</ul> 
+</P>
+<P>
+You will need to know the material from both semesters to answer the questions successfully -- Part C may make use of this material in its algorithmic design questions.
+</P>
+
+<P>
+New: find some mock revision questions for Part C <a href="26210-2019-revise-partC.pdf">here</a> and here is the <a href="26210-2019-revise-partC-ms.pdf">Mark scheme</a>. These are (roughly) in the style that will be used in the exam. A marking scheme will appear here after the final revision session of the semester. 
+</P>
+
+<!--
+<H4>(B) Revision Guidance</H4>
+
+ <p>
+A <a href="revision2017.pdf">Revision Guidance document</a> outlining the 
+parts of the course textbook relevant for the summer examination should help in
+your revision.
+</p>
+<p>
+For samples of the kinds of questions you may be asked, see previous years' examination papers online, but the format may be different, and course content changes from year-to-year. 
+-->
+<!--
+<p>
+Joshua Knowles's <A
+        HREF="COMP26120-revision-2014.pdf">Revision slides</a> give a sample answer to an exam question from several years ago on Knapsack problems.
+</p>
+-->
+<!--
+There is also a  
+<a href="mock2010a.pdf">practice examination paper</a> from 2010 which has similar questions (this year's exam has a different structure,
+but questions of the same kind). <a href="mock2010-ans.pdf">Guidance</a> on answering this practice exam is available.
+</p> -->
+
+<H3>Remedial Complexity and Maths</H3>
+<p>
+<a href="review.pdf">Notes</a>, <a href="questions.pdf">questions</a>
+and <a href="answers.pdf">answers</a> to help those who need additional mathematical support.
+</>
+
+<p>
+</p>
+<!--
+<TABLE BORDER=1 cellpadding="15" ><TR><TD>
+<H2>Guidance for Resits</H2>
+
+<p>
+If, after the summer examinations, you have performed poorly overall and also in this course unit, you may be asked to resit
+this course unit (either the laboratory exercises, the examination, or both). Here are some guidelines for your resits.
+</p>
+<p>
+If you have to retake <font color="red">laboratory exercises<font color="black">, marking sessions will be arranged in the resit period (see below for arrangements for resitting laboratory exercises).
+</p>
+<p>
+<b><font color="red">Assessment<font color="black"></b>: To pass this course unit at the resit stage, 
+your resit course-unit mark will be calculated as follows.
+<DL>
+
+<DT>50% Resit Exam mark<DD>
+<P>
+Your marks from the January and May/June exams will be ignored, and you
+have to resit the exam even if you did well in one or both of the earlier
+exams.
+<P>
+The resit exam will have the same scope (i.e. revise the whole year, not just one semester) as the
+May/June exam (see above).
+<P>
+The Guidance for the summer (May/June) examination above is still relevant, though the format may be different.
+</P>
+
+<DT>50% Laboratory mark<DD>
+<P>
+If part of the reason for you having to resit is that you failed the lab,
+you should try to improve your lab marks by attempting some of the lab
+exercises you didn't do (and/or maybe try to improve your marks for lab
+exercises you did badly in).
+<P>
+Unless you have mitigating circumstances, late laboratory work will be limited to
+a maximum 40% as usual. We will apply this cut-off to the year as a whole,
+not to individual exercises or semesters, so one strategy would be to
+attempt most or all of the first semester lab exercises and perhaps also
+some second semester lab exercises. 
+<BR>
+<B>If you do have mitigating circumstances (e.g. medical problems), we
+may be able to give you full marks for extra lab work, please make sure
+that we are aware of this.</B>
+
+<P>
+If you do more lab work, you should submit it in the usual way. All resit laboratory solutions should be submitted  <b>before the resit examination period
+starts. <font color="red">This is a hard deadline<font color="black"></b>. </p>
+<p>
+We will arrange a <font color="blue">marking session<font color="black"> around the time of the exams: look out for the
+announcement via email to your school account (you should make sure you read this, or forward messages to an account you read).
+To get your exercises marked you <b>must</b> attend the marking session and should be prepared to make arrangements to do so.
+</p>
+
+</DL>
+
+<p>
+
+ </p>
+
+</TABLE>
+-->
+
+</BODY>
+</HTML>
