@@ -7,20 +7,20 @@
 <p>
 </p>
 
-<H2>COMP26120: Algorithms and Imperative Programming (2018/19)</H2>   
+<H2>COMP26120: Algorithms and Imperative Programming (2019/20)</H2>   
 
 <p>
 </p>
 <hr>
 <p>
-Acknowledgements: Parts of this course were developed by Joshua Knowles, Peter Jinks, Jon Shapiro, David Rydeheard, and Ian Pratt-Hartmann.
+Acknowledgements: Parts of this course were developed by Joshua Knowles, Peter Jinks, Jon Shapiro, David Rydeheard, Ian Pratt-Hartmann, and Milan Mihajlovic.
 
 </p>
 <hr>
 
 <p></p>
 
-This year the course is being delivered by <a href="http://www.cs.man.ac.uk/~regerg/">Giles Reger</a>, <a href="http://www.cs.man.ac.uk/~milan/">Milan Mihajlovic</a> and <a href="https://ssvlab.github.io/lucasccordeiro/">Lucas Cordeiro</a>.
+This year the course is being delivered by <a href="http://www.cs.man.ac.uk/~regerg/">Giles Reger</a>, <a href="https://ssvlab.github.io/lucasccordeiro/">Lucas Cordeiro</a>, and Peter Lammich
 
 <H2><font color="blue">Aims<font color="black"></H2>
 
@@ -151,32 +151,41 @@ Normally, there will be ONE laboratory session and ONE lecture per week. The sch
 </p>
 <h4>Laboratory sessions</h4>
 
-<p>Labs are there for you to have your work marked and to ask questions to better understand the material. This year we are introducing a new marking system that will be used as follows:
+<p>Labs are there for you to have your work marked and to ask questions to better understand the material. In addition to the <a href="https://wiki.cs.manchester.ac.uk/index.php?title=UGHandbook19:Coursework">General Lab Instructions</a> (which you need to read), there are some specific 26120 instructions due to the use of the <a href="https://marking.cs.manchester.ac.uk/">COMPjudge</a> system form marking.</p>  
+
+<p> The workflow for submission and marking is as follows: 
 <ul>
-<li> To submit an exercise you will need to run <tt>submit</tt> from the command line as normal
-<li> Once this has been submitted our system will pick it up, compile it, and run some automated tests on your code to produce a report
-<li> You can log in to <a href="https://marking.cs.manchester.ac.uk/">the system</a> to view the reports of your submitted code (you can also use this to check that the submission worked)
+<li> Follow the <a href="https://wiki.cs.manchester.ac.uk/index.php?title=UGHandbook19:Coursework">general instructions for submitting via Gitlab</a> making sure you <b>tag any commit you want to be marked with the exercise short name e.g. 'ex3'</b>. 
+<li> Each exercise should be completed in its own branch. When starting a new exercise you should
+<ul>
+<li> run <tt>git checkout <i>ex-short-name</i></tt> where <i>ex-short-name</i> is, for example, ex3 
+<li> run <tt>refresh</tt> - this script should already be in the repository. It rebases your branch on top of the original repository and ensures that the starting material is up-to-date in case any changes were made since the initial fork. Always run this at the start of each lab. Running this after you have started may require you to resolve conflicts.</li>
+</ul>
+<li> Once your work has been submitted (e.g. <tt>git push --tags origin ex1</tt>), COMPjudge will pick it up, compile it, and run some automated tests on your code to produce a report. The workflow surrounding COMPjudge is as follows:
+<ul>
+<li> You can log in to <a href="https://marking.cs.manchester.ac.uk/">COMPjudge</a> to view the reports of your submitted code (you can also use this to check that the submission worked)
 <li> In your marking session, when you want to be marked you should select <i>request marking</i> next to the exercise in the online system and enter your information
 <li> TAs will be notified that you are ready to be marked and use their version of your report (which may contain extra bits) to mark your work
 <li> Once the TAs submit your mark you should receive an email confirming it (if you do not please contact the course unit leader but wait a few hours first)
 <li> Note that the electronic marking queue aims to distribute TAs uniformly between students and gives priority to those being marked for the correct exercise in the correct marking session (if you go to the wrong marking session you will be at the end of the queue)
+</ul>
 </ul>
 
 <p>
 Attendance in labs:
 </p>
 <ul>
-<li>We will collect attendance in labs and this will appear in ARCADE
+<li>We will collect attendance in labs
 <li>Attendance is not mandatory (there are no marks attached to it) but is strongly encouraged and missing a lab may lead to you not getting marked (see marking deadline below). 
-<li>If you wish to ammend your ARCADE entry then you should talk to the lab manager in your lab session. If you miss a session for a legitimate reason (because of, for example, medical appointments, interviews, etc, or illness) and need to marked in a later session then talk to the lab manager and they will be able to remove you from the bottom of the marking queue</li>
-<li> Only in exceptional circumstances contact a member of staff for these issues - ordinary messages will be ignored. 
+<li>As attendance is not mandatory we will not normally update a record of missed attendance but you can talk to the lab manager if you need to do this for some reason. 
 </li>
 </ul>
 
 <h4>Deadlines</h4>
 
 <p>
-Each laboratory exercise has a standard deadline of <i>the beginning of the next lab session</i>. For example, if your lab sessions are 11:00-13:00 on Tuesdays then the deadline for the Week 2 lab is 11:00 on the Tuesday of Week 3. In certain cases the next lab session may not be the next week (e.g. for reading week). At the end of the Semester the next lab session is the first one of the next Semester. As per general School policy, there are no extensions and late flags should be removed via the standard mitigating circumstances procedure.
+All lab groups share the same deadline of XXX. 
+In certain cases the next lab session may not be the next week (e.g. for reading week). At the end of the Semester the next lab session is the first one of the next Semester. As per general School policy, we do not issue extensions for individuals but late flags may be removed via the standard mitigating circumstances procedure. In exceptional circumstances the deadline may be extended and in such cases you will be informed - see <a href="https://wiki.cs.manchester.ac.uk/index.php?title=UGHandbook19:Coursework">here</a> for the rules and a link to the form. 
 </p>
 <p>
 If you decide to complete
@@ -184,7 +193,9 @@ the exercise after the labs shut in the evening, it is your responsibility
 to make sure that you can submit remotely.
 </p>
 <p>
-As well as the standard submission deadline, there is a marking deadline: <font color="red">All exercises should be marked within 3 LABS of the submission deadline<font color="black">. Submissions not marked by this deadline will only be marked at the discretion of the lab manager. For example, if you submit something in week 2 you can have it marked in weeks 2, 3, or 4. The marking deadline may be relaxed if there is too much demand in labs. The best way to avoid this is to have your work marked in the week in which you submitted it. If you turn up to the lab and join the marking queue and still do not get marked then your individual marking deadline will automatically extend until the end of your next lab.
+As well as the standard submission deadline, there is a marking deadline: <font color="red">All exercises should be marked within 3 LABS of the submission deadline<font color="black">. The reason for the marking deadline is to encourage you to get your work marked as soon after you complete it as possible and to balance time available for marking. 
+</p>
+<p>Submissions not marked by this deadline will only be marked at the discretion of the lab manager. For example, if a lab has a deadline in week 2 you can have it marked in weeks 2, 3, or 4. The marking deadline may be relaxed if there is too much demand in labs. The best way to avoid this is to have your work marked in the week in which you submitted it. If you turn up to the lab and join the marking queue and still do not get marked then your individual marking deadline will automatically extend until the end of your next lab.
 </p>
 
 <H2><font color="blue">Course schedule, lecture material and laboratory exercises<font color="black"></H2>
@@ -210,7 +221,9 @@ Lectures start in Week 1, Laboratory exercises in Week 2.
 </p>
 <p>
 For suggested reading we use GT for <i>Algorithm Design</i> (core text), CLRS for <i>Introduction to Algorithms</i>, and DD for <i>C How to Program</i>. Note that for non-core-text material (CLRS and DD) this is <i>suggested</i> in the sense that it will help but is not core. </p>
-<p>All quizes are on Blackboard and will have a deadline on midnight on the Sunday at the end of the week. However, note that if there is a problem with Blackboard after 4pm on Friday you will not be able to get any help with this.</p>
+<p>All quizes are on Blackboard and will have a deadline at 6pm on the Friday at the end of the week. However, note that if there is a problem with Blackboard outside of core hours you will not be able to get any help with this.</p>
+
+<p>For all labs see <a href="https://marking.cs.manchester.ac.uk/">COMPjudge</a> for the lab material. Quizzes are on Blackboard.</a></p> 
 
 <TABLE BORDER=1 cellpadding="7" style="width: 100%">
   <colgroup>
@@ -225,40 +238,40 @@ For suggested reading we use GT for <i>Algorithm Design</i> (core text), CLRS fo
 <TR><TH COLSPAN=2>Welcome/Registration Week
 	<TD><TD ROWSPAN=2> 
    No laboratory session in Week 0 or Week 1.
-<TR><TH>1<TD>Giles: <a href="2018slides/introduction.pdf">Introduction - Algorithms and their Performance</a><TD>GT 1.1
-<TR><TH>2<TD>Giles: <a href="2018slides/lecture2.pdf">From Java to C</a>
-
-	<TD><TD><a href="2018labs/lab1-Pseudocode.pdf">Lab 1 - Algorithm Design and  Performance</a> - some <a href="2018labs/lab1-reading.pdf">hints and tips</a>. 
-<TR><TH>3<TD>Lucas: <a href="2018slides/pre-lecture3.pdf">Pointers in C</a>
-	<TD>GT 2.1, DD 7
-	<TD><a href="2018labs/lab2-C-one.pdf">Lab 2 - Introduction to C</a> - some <a href="2018labs/lab2-reading.pdf">necessary reading</a>.
-<TR><TH>4<TD>Lucas: <a href="2018slides/lecture4.pdf">Linked Lists in C</a>
-	<TD>GT 2.2, CLRS 10, DD 12
-	<TD><a href="2018labs/lab3-C-two.pdf">Lab 3 - Debugging; Arrays and Strings in C</a> - some reading on <a href="2018labs/debugging.pdf">debugging</a> and <a href="2018labs/pointers.pdf">pointers</a>. 
-<TR><TH>5<TD>Lucas: <a href="2018slides/lecture5.pdf">Introducing Complexity Analysis</a>
-	<TD>GT 1.2-1.3, CLRS 2,3
-	<TD><a href="2018labs/lab4-LinkedList.pdf">Lab 4 - Linked Lists</a>
+<TR><TH>1	<TD>Lucas: Introduction - Algorithms and their Performance	
+	 	<TD>GT 1.1
+<TR><TH>2	<TD>Peter: From Java to C
+		<TD>
+		<TD>Lab 1 - Algorithm Design and  Performance
+<TR><TH>3	<TD>Lucas: Pointers in C
+		<TD>GT 2.1, DD 7
+		<TD>Lab 2 - Introduction to C
+<TR><TH>4	<TD>Lucas: Linked Lists in C
+		<TD>GT 2.2, CLRS 10, DD 12
+		<TD>Lab 3 - Debugging; Arrays and Strings in C
+<TR><TH>5	<TD>Lucas: Introducing Complexity Analysis
+		<TD>GT 1.2-1.3, CLRS 2,3
+		<TD ROWSPAN=2>Lab 4 - Linked Lists
 
 <TR><TH COLSPAN=2>Reading Week <TD> GT 8.1-8.2, CLRS 4
 
-<TR><TH>7<TD>Lucas: <a href="2018slides/lecture6.pdf">Divide and Conquer</a> 
-	<TD>GT 9.1
-	<TD><a href="2018labs/lab5-Iterative-Sort.pdf">Lab 5  - Iterative Sort</a>, <a href="SortingTool/index.html">further information about sorting algorithms</a> 
-	<TD>C Programming
-<TR>
-<TR><TH>8<TD>Lucas: <a href="2018slides/lecture7.pdf">More on the Complexity of Recursive Programs</a>
-	<TD>GT 2.3
-	<TD><a href="2018labs/lab6-Recursive-Sort.pdf">Lab 6 - Recursive Sort</a> 
-<TR><TH>9<TD ROWSPAN=3>Milan: Advanced Data Structures (binary trees, AVL trees, Hash tables). <a href="2018slides/lecture8.pdf">first lecture</a>, <a href="2018slides/lecture9.pdf">second lecture</a>, and <a href="2018slides/lecture10.pdf">third lecture</a>. 
-	<TD> GT 4.2
-	<TD ROWSPAN=2><a href="2018labs/lab7-Pangolins.pdf">Lab 7 - Pangolins</a>, <a href="2018labs/pangolins.pdf">a bigger example of the game</a> 
-	<TD>Complexity
-<TR><TH>10 <TD> GT 5.3, 19.6
+<TR><TH>7	<TD>Lucas: Divide and Conquer
+		<TD>GT 9.1
+		<TD ROWSPAN=2>Lab 5 - Sorting
+		<TD>C Programming
+<TR><TH>8	<TD>Lucas: More on the Complexity of Recursive Programs
+		<TD>GT 2.3
+<TR><TH>9	<TD ROWSPAN=3>Giles: Advanced Data Structures 
+		<TD> GT 4.2
+		<TD ROWSPAN=3>Lab 7 
+		<TD>Complexity
+<TR><TH>10 	
+		<TD> GT 5.3, 19.6
 <TR><TH>11
-	<TD> GT 6.1-6.3
-	<TD ROWSPAN=2><a href="2018labs/lab8-spellchecker.pdf">Lab 8 - Spellchecker</a> (Deadline start of Semester 2) 
-	<TD>Data Structures
-<TR><TH>12<TD> Revision - <a href="2018slides/revision_sem1_1.pdf">overview</a> and <a href="2018slides/revision_sem1_2.pdf">Lucas part</a>
+		<TD> GT 6.1-6.3
+		<TD 
+		<TD>Data Structures
+<TR><TH>12	<TD> Revision 
                  
 
 <TR><TH COLSPAN=5>Second Semester <br>
@@ -269,33 +282,32 @@ Easter break is 8th April - 29 April (between Weeks 10 and 11). <br>Monday 6th M
 <TH>Lab
 <TH>Quiz
 
-<TR><TH>1<TD ROWSPAN=3>Milan: Graph Algorithms. <a href="2018slides/COMP26120-G-L1-18.pdf">Lecture 1</a>, <a href="2018slides/COMP26120-G-L2-18.pdf">Lecture 2</a>, <a href="2018slides/COMP26120-G-L3-18.pdf">Lecture 3</a>
- <TD ROWSPAN=3> GT 13, 14 <TD> The labs this week (Week 1) are marking sessions only
-<TR><TH>2<TD><a href="2018labs/lab9-Graphs.pdf">Lab 9 - Representing Graphs</a> (and some <a href="2018labs/lab9-extension.pdf">extension material</a>)
-<TR><TH>3<TD ROWSPAN=3><a href="2018labs/lab10-Testing-small-world-hypothesis.pdf">Lab 10 - Testing the Small World Hypothesis</a>
-<TR><TH>4<TD ROWSPAN=2>Lucas: Tractability and NP completeness. <a href="2018slides/Tractability-NPC_part1.pdf">Lecture 4</a> <a href="2018slides/Tractability-NPC_part2.pdf">Lecture 5</a><TD ROWSPAN=2>GT 17, CLRS 34<TD> Graphs
+<TR><TH>1	<TD ROWSPAN=3>Peter: Graph Algorithms. 
+ 		<TD ROWSPAN=3> GT 13, 14 
+		<TD> The labs this week (Week 1) are marking sessions only
+<TR><TH>2	<TD ROWSPAN=4> Lab 8 - Graphs
+<TR><TH>3
+		<TD> Graphs	
+<TR><TH>4	<TD ROWSPAN=2>Lucas: Tractability and NP completeness 
+		<TD ROWSPAN=2>GT 17, CLRS 34
 <TR><TH>5
-<TR><TH>6<TD ROWSPAN=4>Giles: Further Algorithmic Techniques
-<ul>
-<li><a href="2018slides/techniques1.pdf">Part 1. Writing algorithms and Greedy Algorithms</a>
-<li><a href="2018slides/techniques2.pdf">Part 2. Dynamic Programming</a>
-<li>Part 3. Linear Programming: <a href="2018slides/techniques3.pdf">One</a> and <a href="2018slides/techniques3b.pdf">Two</a>
-<!--<li>Part 4. Approximation-->
-<ul>
-<TD ROWSPAN=4>GT 5 and CLRS 15,16 for Greedy and Dynamic. CLRS 29 for Linear Programming. 
-<TD> <a href="2018labs/lab11-graph-colouring.pdf ">Lab 11 - From Graph Colouring to Satisfiability Checking</a>
+<TR><TH>6	<TD ROWSPAN=2> Peter: Algorithmic Techniques
+		<TD ROWSPAN=2>GT 5 and CLRS 15,16 for Greedy and Dynamic. 
+		<TD ROWSPAN=4> Lab 8 - The Knapsack Problem
 <TR><TH>7
-<TD ROWSPAN=3> <a href="2018labs/lab12-Knapsack.pdf">Lab 12 - The Knapsack Problem</a>
-        <!--<font color="red"> Warning<font color =
-        "black">: To undertake this exercise you will need to read this
-        material on the <A href="lab/knapsack.pdf"> Knapsack problems</a>. (See also the material in the Resources
-        section above).   <BR> <BR>-->
-<TR><TH>8<TD>Tractability and Techniques 1 
+		<TD>Tractability and Techniques 
+<TR><TH>8
+		<TD ROWSPAN=2> Giles: Linear Programming
+		<TD ROWSPAN=2> CLRS 29 
 <TR><TH>9
-<TR><TH>10<TD ROWSPAN=2>Giles: Number Theoretic Algorithms. <a href="2018slides/numtheory1.pdf">Lecture 1</a> <a href="2018slides/numtheory2.pdf">Lecture 2</a><TD ROWSPAN=2> GT 10.1-3. CLRS 31 <TD ROWSPAN=2> <a href="2018labs/lab13-public-key-cryptography.pdf">Lab 13 - Public Key Cryptography</a> <i>There are no provided files for this lab, you should create your own makefile etc</i> 
-<TR><TH>11<TD>Techniques 2 and Number Theoretic
-<TR><TH>12<TD>Revision Lecture - <a href="2018slides/revision_sem2.pdf">Giles' Slides</a> <a href="2018slides/revision_sem2_cordeiro.pdf">Lucas' Slides</a> <TD><TD>The labs this week (Week 12) are marking sessions only
-   <BR><B>This is normally your last chance to get lab work marked</B>
+<TR><TH>10	<TD ROWSPAN=2>Giles: Number Theoretic Algorithms. 
+		<TD ROWSPAN=2> GT 10.1-3. CLRS 31 
+		<TD ROWSPAN=2> Lab 9 - Public Key Cryptography
+<TR><TH>11	<TD>Linear Programming and Number Theoretic
+<TR><TH>12	<TD>Revision Lecture 
+		<TD>
+		<TD>The labs this week (Week 12) are marking sessions only
+   		<BR><B>This is normally your last chance to get lab work marked</B>
   
 </TABLE>
 
@@ -337,6 +349,7 @@ Format: 2 hours, 3 questions. Answer all questions.
 
 </UL>
 
+<!--
 <H3>Guidance for the January Examination</H3>
 
 <p>Format: 1.5 hour exam: 2 questions, answer both.</p>
@@ -361,8 +374,8 @@ As always, the advice on scheduling revision is to start by getting a good gener
 appreciation of the topics, and then progressively to deepen one's
 understanding. Never bet on a particular topic occurring: only a part
 of what we covered can be examined.
-
-
+-->
+<!--
 <H3>Guidance for the May/June Examination</H3>
 
 <P>
@@ -374,13 +387,13 @@ The examination is 2 hours in duration, with 3 sections. You are asked to answer
 </ul> 
 </P>
 <P>
-You will need to know the material from both semesters to answer the questions successfully -- Part C may make use of this material in its algorithmic design questions.
+You will need to know the material from both semesters to answer the questions successfully - Part C may make use of this material in its algorithmic design questions.
 </P>
 
 <P>
 New: find some mock revision questions for Part C <a href="26210-2019-revise-partC.pdf">here</a> and here is the <a href="26210-2019-revise-partC-ms.pdf">Mark scheme</a>. These are (roughly) in the style that will be used in the exam. A marking scheme will appear here after the final revision session of the semester. 
 </P>
-
+-->
 <!--
 <H4>(B) Revision Guidance</H4>
 
