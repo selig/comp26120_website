@@ -155,13 +155,15 @@ Normally, there will be ONE laboratory session and ONE lecture per week. The sch
 
 <p> The workflow for submission and marking is as follows: 
 <ul>
-<li> Follow the <a href="https://wiki.cs.manchester.ac.uk/index.php?title=UGHandbook19:Coursework">general instructions for submitting via Gitlab</a> making sure you <b>tag any commit you want to be marked with the exercise short name e.g. 'ex3'</b>. 
-<li> Each exercise should be completed in its own branch. When starting a new exercise you should
+<li> Follow the <a href="https://wiki.cs.manchester.ac.uk/index.php?title=UGHandbook19:Coursework">general instructions for submitting via Gitlab</a> e.g. each exercise should be completed in its own branch. In addition to these instructions, for each new exercise you should
 <ul>
-<li> run <tt>git checkout <i>ex-short-name</i></tt> where <i>ex-short-name</i> is, for example, ex3 
-<li> run <tt>refresh</tt> - this script should already be in the repository. It rebases your branch on top of the original repository and ensures that the starting material is up-to-date in case any changes were made since the initial fork. Always run this at the start of each lab. Running this after you have started may require you to resolve conflicts.</li>
+<li> To start, run <tt>git checkout <i>ex-short-name</i></tt> where <i>ex-short-name</i> is, for example, ex3 
+<li> Immediately after this, run <tt>./refresh.sh</tt> - this rebases your branch on top of the original repository and ensures that the starting material is up-to-date in case any changes were made since the initial fork. Always run this at the start of each lab. Running this after you have started may require you to resolve conflicts.</li>
+<li> Once you have finished (or want COMPjudge to run tests) run <tt>./submit.sh</tt> - this script adds a tag to your last commit and pushes this. If submission is not working try reading the comments in <tt>./submit.sh</tt></li> 
 </ul>
-<li> Once your work has been submitted (e.g. <tt>git push --tags origin ex1</tt>), COMPjudge will pick it up, compile it, and run some automated tests on your code to produce a report. The workflow surrounding COMPjudge is as follows:
+These two scripts should already be in the repository.</li>
+<br>
+<li> Once your work has been submitted, COMPjudge will pick it up, compile it, and run some automated tests on your code to produce a report. The workflow surrounding COMPjudge is as follows:
 <ul>
 <li> You can log in to <a href="https://marking.cs.manchester.ac.uk/">COMPjudge</a> to view the reports of your submitted code (you can also use this to check that the submission worked)
 <li> In your marking session, when you want to be marked you should select <i>request marking</i> next to the exercise in the online system and enter your information
